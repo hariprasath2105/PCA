@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>PCA Result</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+</head>
+<body>
+    <div class="result-container">
+        <h2>PCA Output</h2>
+        <div class="table-container">
+            {{ table | safe }}
+        </div>
+        <div class="back-link">
+            <a href="/">← Upload another file</a>
+        </div>
+    </div>
+</body>
+</html>

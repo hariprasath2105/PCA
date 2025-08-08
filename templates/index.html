@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>PCA Stock Analysis</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+</head>
+<body>
+    <div class="form-container">
+        <h2>Stock Market PCA Analysis</h2>
+        <form action="/predict" method="POST">
+            <label>AAPL Price:</label>
+            <input type="number" step="any" name="aapl" required value="150"><br>
+
+            <label>GOOGL Price:</label>
+            <input type="number" step="any" name="googl" required value="2800"><br>
+
+            <label>MSFT Price:</label>
+            <input type="number" step="any" name="msft" required value="300"><br>
+
+            <label>AMZN Price:</label>
+            <input type="number" step="any" name="amzn" required value="3500"><br>
+
+            <button type="submit">Get PCA Result</button>
+        </form>
+    </div>
+</body>
+</html>
